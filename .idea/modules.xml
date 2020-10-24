@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/disims.iml" filepath="$PROJECT_DIR$/disims.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logic-servier/logic-servier.iml" filepath="$PROJECT_DIR$/logic-servier/logic-servier.iml" />
+    </modules>
+  </component>
+</project>
