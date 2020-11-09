@@ -11,5 +11,17 @@
 
     <artifactId>dto</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.dc</groupId>
+            <artifactId>ims-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
+
+    </dependencies>
 </project>

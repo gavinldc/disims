@@ -1,9 +1,4 @@
-package com.dc.disims.boss;
-
-import java.net.InetSocketAddress;
-
-import com.dc.disims.boss.handler.LoginHandler;
-import com.dc.disims.boss.handler.NettyServerHandler;
+package com.dc.common.boot;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -16,7 +11,10 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.CharsetUtil;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
+
+import java.net.InetSocketAddress;
 
 @Slf4j
 public class BootStrap extends Thread{
@@ -27,27 +25,28 @@ public class BootStrap extends Thread{
 	
 	private EventLoopGroup bossGroup = new NioEventLoopGroup(1);
     //new 一个工作线程组
-    private EventLoopGroup workGroup = new NioEventLoopGroup(200);
-    
+    private EventLoopGroup workGroup = new NioEventLoopGroup(8);
+
+    @Setter
     private ChannelInitializer<SocketChannel> channelInitializer = null;
     
     ServerBootstrap bootstrap = null;
 	
 	
-	public BootStrap(int port,String address) {
+	public BootStrap(int port, String address) {
 		this.address=address;
 		this.port=port;
-		 channelInitializer = new ChannelInitializer<SocketChannel>() {
-
-			@Override
-			protected void initChannel(SocketChannel socketChannel) throws Exception {
-
-				socketChannel.pipeline().addLast("decoder", new StringDecoder(CharsetUtil.UTF_8));
-		        socketChannel.pipeline().addLast("encoder", new StringEncoder(CharsetUtil.UTF_8));
-		        socketChannel.pipeline().addLast(new LoginHandler());
-				
-			}
-		};
+//		 channelInitializer = new ChannelInitializer<SocketChannel>() {
+//
+//			@Override
+//			protected void initChannel(SocketChannel socketChannel) throws Exception {
+//
+//				socketChannel.pipeline().addLast("decoder", new StringDecoder(CharsetUtil.UTF_8));
+//		        socketChannel.pipeline().addLast("encoder", new StringEncoder(CharsetUtil.UTF_8));
+//		        socketChannel.pipeline().addLast(new LoginHandler());
+//
+//			}
+//		};
 	}
 	
 	public void shutdown() {

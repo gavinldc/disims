@@ -1,7 +1,5 @@
-package com.dc.disims.Message;
+package com.dc.ims.dto;
 
-import com.dc.common.enums.MessageDetailTypeEnum;
-import com.dc.common.enums.MessageTypeEnum;
 import lombok.Builder;
 import lombok.Data;
 
@@ -10,7 +8,7 @@ import lombok.Data;
  */
 @Data
 @Builder
-public abstract class MisMessage {
+public abstract class BaseMisMessageDTO {
 
     private Long id;
 
@@ -38,6 +36,19 @@ public abstract class MisMessage {
 
 
 
+
+
+    }
+
+    static public enum MessageDetailTypeEnum {
+
+        TEXT,IMAGE,VOICE,VIDEO,EXPRESSION
+
+    }
+
+    static public enum MessageTypeEnum {
+
+        GROUP,PRIVATE
 
 
     }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth-server" />
+        <module name="broker-core" />
+        <module name="dto" />
+        <module name="ims-common" />
+        <module name="ims-dto" />
+        <module name="logic-servier" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="auth-server" target="1.8" />
+      <module name="broker-core" target="1.8" />
+      <module name="disims" target="1.8" />
+      <module name="dto" target="1.8" />
+      <module name="ims-common" target="1.8" />
+      <module name="ims-dto" target="1.8" />
+      <module name="logic-servier" target="1.8" />
+      <module name="module" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

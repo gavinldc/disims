@@ -1,7 +1,21 @@
 package com.dc.disims;
 
-/**
- * Created by lvdanchen on 20/9/9.
- */
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+@EnableAutoConfiguration
 public class App {
+
+
+
+    public static  void main(String[] msg){
+
+        SpringApplication.run(App.class);
+
+
+    }
+
+
 }

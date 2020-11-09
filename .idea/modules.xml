@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/auth-server/auth-server.iml" filepath="$PROJECT_DIR$/auth-server/auth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broker-core/broker-core.iml" filepath="$PROJECT_DIR$/broker-core/broker-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/disims.iml" filepath="$PROJECT_DIR$/disims.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ims-common/ims-common.iml" filepath="$PROJECT_DIR$/ims-common/ims-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dto/ims-dto.iml" filepath="$PROJECT_DIR$/dto/ims-dto.iml" />
       <module fileurl="file://$PROJECT_DIR$/logic-servier/logic-servier.iml" filepath="$PROJECT_DIR$/logic-servier/logic-servier.iml" />
     </modules>
   </component>
