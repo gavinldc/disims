@@ -1,0 +1,4 @@
+# disims
+基于springcloud和netty编写的分布式的长连接框架
+网关支持websocket，socket
+支持灰度，内部业务服务多点高可用
